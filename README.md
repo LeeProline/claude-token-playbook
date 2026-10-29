@@ -51,8 +51,8 @@ Then open `~/.claude/CLAUDE.md` and fill in **About me**: how you like answers, 
 
 ## Getting started
 
-- **Day one:** sections 1 to 6 give most of the savings. Read those.
-- **As projects grow:** the rest (parallel work, scripts, visual reviews, release steps) become useful.
+- **Claude follows the whole file from day one.** You don't switch sections on; the rules that don't apply yet (releases, parallel builders, visual reviews) simply don't come up until your project needs them.
+- **What to read yourself first:** sections 1 to 6. They're where most of the savings come from, and knowing them helps you work with Claude the same way (ask for stories, let it hand work to cheaper models, keep the context file current).
 - **Make it yours:** when Claude does something you don't like, tell it to save a rule. The file gets better the more you use it.
 - **More than one computer?** Keep the same `CLAUDE.md` on each, and keep each project's context file in the project's repo, so any machine can pick up where another left off.
 
