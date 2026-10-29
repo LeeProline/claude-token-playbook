@@ -9,6 +9,7 @@ Spend tokens where judgement is needed; let cheaper models, scripts and the mach
 - My machine's limit for parallel builders, if I've set one: (e.g. "max 4")
 
 ## 1. Start every session the cheap way
+- Load the **lean-context** skill (`~/.claude/skills/lean-context`, included in this repo) at the start of a session, before planning multi-agent work, and before ending a session or compacting. It is the short checklist version of these rules.
 - Restate the goal in one line.
 - Read the project's context file first (section 2), then any handoff, plan or queue file, instead of re-exploring.
 - Read only what you need: search first, then read the lines that matter. Never dump whole large files, logs or JSON into the chat.
