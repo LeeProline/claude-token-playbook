@@ -83,11 +83,13 @@ Then wait for the result. Don't also do the same work in the main chat.
 
 ## 8. Habits that work
 
+- **Research first, so it lands right first time.** For anything new or unfamiliar (a library, an API, a data source, a design), spend a cheap research pass first: current docs and sources, a short written plan, then build. Tools and APIs change fast; check, don't assume.
+
 - **Triage first, fix on my word.** When bugs or feedback come in, triage them straight away (FIX / STORY / DISCUSS / DUPLICATE), but don't start fixing until I say go. Crashes are always top priority.
 - **Keep a backlog.** Ideas that aren't for now become stories in one backlog file, so they're not lost and don't derail today's work.
 - **Small batches, tested, then merged.** Each story is built on its own branch or worktree, tested, merged, and then the branch and worktree are deleted. Clean up after every merge: disk and context are both limited.
-- **Release in two steps.** New builds go to me (or an internal group) first. I check them on a real device, then say when they go to everyone else. Release notes list user-facing improvements and fixes only.
-- **One check before shipping.** Run the full test suite once, then check the parts tests can't (on a real device, real accounts, real integrations).
+- **Release in two steps.** Anything going to other people (an app build, a website, a report, a deployed service) goes to me, or a private or staging copy, first. I check it, then say when it goes to everyone else. Release notes list what users will notice only.
+- **One check before shipping.** Run the full test suite once, then check what tests can't: the real thing in its real setting (the device, the live page, real accounts and integrations, the actual data).
 - **Tell me when long work finishes.** If I've stepped away, send a notification when a build or long task is done or blocked, not for routine progress.
 - **Write it down before you forget it.** Standing rules I give you go into memory straight away. At the end of a long session, write a handoff file before compacting.
 
