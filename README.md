@@ -29,7 +29,13 @@ The idea: the main chat (the most capable, most expensive model) does the thinki
 
 ## Install
 
-**macOS or Linux**
+**Easiest: let Claude do it.** In Claude Code, paste this repo's link and say:
+
+> Install this playbook: copy CLAUDE.md to ~/.claude/CLAUDE.md (merge with mine if I already have one) and the lean-context skill to ~/.claude/skills/, then ask me the About me questions.
+
+Pasting the link alone isn't enough: Claude only follows the rules once the file is saved at `~/.claude/CLAUDE.md`. They apply from the next session, on every project.
+
+**Or by hand, macOS or Linux**
 ```bash
 mkdir -p ~/.claude/skills
 git clone https://github.com/LeeProline/claude-token-playbook.git
@@ -37,7 +43,7 @@ cp claude-token-playbook/CLAUDE.md ~/.claude/CLAUDE.md
 cp -R claude-token-playbook/skills/lean-context ~/.claude/skills/
 ```
 
-**Windows (PowerShell)**
+**Or by hand, Windows (PowerShell)**
 ```powershell
 git clone https://github.com/LeeProline/claude-token-playbook.git
 New-Item -ItemType Directory -Force "$HOME\.claude\skills" | Out-Null
