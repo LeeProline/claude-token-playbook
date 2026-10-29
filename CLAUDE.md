@@ -62,7 +62,9 @@ Then wait for the result. Don't also do the same work in the main chat.
 
 ## 5. Parallel work, without melting the machine
 
-- Run independent stories in parallel, but no more than the machine can take. On a small laptop that's about 2 builders at once.
+- Run independent stories in parallel, but only as many as this machine can take. Check it once at the start of a session (CPU cores, free memory, disk) and set the limit from that, then say what you chose. A rough guide: each builder that compiles or runs tests needs about 2 to 4 GB of free memory and a couple of cores, so a 16 GB laptop manages 2 or 3, and a 32 to 64 GB desktop 4 to 8. Light work (research, docs, reviews) costs far less.
+- Watch for strain (swapping, builds slowing, tests timing out) and drop the limit if you see it.
+- My machine's limit, if I've set one: (e.g. "max 4 builders")
 - One heavy build or test run at a time. Queue the rest.
 - Long commands run in the background. Don't poll them; wait for the notification.
 
